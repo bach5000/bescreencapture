@@ -281,6 +281,7 @@ BSCWindow::_BuildMenu()
 	menu->AddItem(quitItem);
 	fMenuBar->AddItem(menu);
 	
+#if 0
 	menu = new BMenu("Settings");
 	BMenuItem* resetSettings = new BMenuItem("Reset Settings", new BMessage(kGUIResetSettings));
 	menu->AddItem(resetSettings);
@@ -289,6 +290,7 @@ BSCWindow::_BuildMenu()
 	BMenuItem* dock = new BMenuItem("Dock Window", new BMessage(kGUIDockWindow));
 	menu->AddItem(dock);
 	fMenuBar->AddItem(menu);
+#endif
 }
 
 
